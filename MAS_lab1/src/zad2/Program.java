@@ -4,14 +4,22 @@ public class Program {
 
 	public static void main(String[] args) {
 
-		Konto k1 = new Konto(1, 100.);
+		Account k1 = new Account(1, 85);
 		try {
-			k1.getSrodki(12.);
+			k1.withdraw(12.);
+		
+			String propAccountNumber = "10103421";
+			String wrngAccountNumber = "10103422";
+			k1.setNumeber(wrngAccountNumber);
+			k1.setNumeber(propAccountNumber);
+
+			k1.setBalance(112);
+			System.out.println(k1);
+			
 		} catch (NoSuchMoneyException e) {
 			e.printStackTrace();
 		}
 		
-		k1.setNumer("1112222C");
 		
 		
 	}
