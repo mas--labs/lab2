@@ -1,6 +1,6 @@
 package zad3;
 
-public enum Monety {
+public enum Coin {
 	
 	_1zl(1),
 	_2zl(2),
@@ -8,7 +8,7 @@ public enum Monety {
 	
 	private int value;
 
-	private Monety(int value) {
+	private Coin(int value) {
 		this.value = value;
 	}
 	
